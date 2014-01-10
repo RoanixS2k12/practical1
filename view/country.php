@@ -18,24 +18,27 @@
 </head>
 
 <body>
-<h1><?php echo $country ?></h1>
 
+    <div class="container">
+        <h1><?php echo $country ?></h1>
+        <table class="table table-hover">
+            <?php foreach($cities as $cityId => $city) :?>
+                <tr>
+                    <?php if(strcmp($city['country'], $country) == 0): ?>
+                        <td><a href="city.php?id=<?= $cityId; ?>"><?= $city['name']; ?></a></td>
+                    <?php endif; ?>
+                </tr>
 
-    <table>
-        <?php foreach($cities as $cityId => $city) :?>
-            <tr>
-                <?php if(strcmp($city['country'], $country) == 0): ?>
-                    <td><a href="city.php?id=<?= $cityId; ?>"><?= $city['name']; ?></a></td>
-                <?php endif; ?>
-            </tr>
+            <?php endforeach; ?>
+        </table>
 
-        <?php endforeach; ?>
-    </table>
+        <a href="cities.php" class="btn btn-primary">Back to list</a>
 
+    </div>
 
-<footer>
-    <a href="cities.php">Back to list</a>
-    <?php include "footer.php" ?>
-</footer>
+    <footer>
+
+        <?php include "footer.php" ?>
+    </footer>
 </body>
 </html>

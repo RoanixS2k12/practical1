@@ -17,12 +17,15 @@
 </head>
 
 <body>
-<h1><?php echo $city["name"]?></h1>
+    <div class="container">
+        <h1><?php echo $city["name"]?><small>  <?php echo $city["country"] ?></small></h1>
 
-<a href="country.php?name=<?= $city['country']; ?>">See others city from <?php echo $city["country"] ?></a>
-<footer>
-    <a href="cities.php">Back to list</a>
-    <?php include "footer.php" ?>
-</footer>
+        <a href="country.php?name=<?= $city['country']; ?>" class="btn btn-success">See others city from <?php echo $city["country"] ?></a>
+        <a href="cities.php" class="btn btn-primary">Back to list</a>
+    </div>
+
+    <footer>
+        <?php include "footer.php" ?>
+    </footer>
 </body>
 </html>

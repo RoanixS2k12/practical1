@@ -14,13 +14,16 @@
     <title>404 Not Found</title>
 </head>
 <body>
-<h1>404 Not Found</h1>
-<h2>We are unable to find the city you are looking for :-(</h2>
-<p>Please accept this gif as an apology:</p>
-<p><img src="https://raw.github.com/willdurand-edu/php-practicals/master/src/images/nyan.gif" /></p>
-<footer>
-    <a href="cities.php">Back to list</a>
-    <?php include "footer.php" ?>
-</footer>
+    <div class="container">
+        <h1>404 Not Found</h1>
+        <h2>We are unable to find the city you are looking for :-(</h2>
+        <p>Please accept this gif as an apology:</p>
+        <p><img src="https://raw.github.com/willdurand-edu/php-practicals/master/src/images/nyan.gif" /></p>
+        <a href="cities.php" class="btn btn-primary">Back to list</a>
+    </div>
+    <footer>
+
+        <?php include "footer.php" ?>
+    </footer>
 </body>
 </html>

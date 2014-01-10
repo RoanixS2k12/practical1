@@ -16,7 +16,7 @@
 
     <body>
 
-        <div class="container">
+    <div class="container">
             <h1>All Cities</h1>
             <table class="table table-hover">
                 <?php foreach ($cities as $cityId => $city) : ?>
