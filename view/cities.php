@@ -15,15 +15,19 @@
     </head>
 
     <body>
-        <h1>All Cities</h1>
-        <table>
-            <?php foreach ($cities as $cityId => $city) : ?>
-                <tr>
-                    <td><a href="city.php?id=<?= $cityId; ?>"><?= $city['name']; ?></a></td>
-                    <td><a href="country.php?name=<?= $city['country']; ?>"> <?= $city['country']; ?></a></td>
-                </tr>
-            <?php endforeach; ?>
-        </table>
+
+        <div class="container">
+            <h1>All Cities</h1>
+            <table class="table table-hover">
+                <?php foreach ($cities as $cityId => $city) : ?>
+                    <tr>
+                        <td><a href="city.php?id=<?= $cityId; ?>"><?= $city['name']; ?></a></td>
+                        <td><a href="country.php?name=<?= $city['country']; ?>"> <?= $city['country']; ?></a></td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+
         <?php include "footer.php" ?>
     </body>
 
