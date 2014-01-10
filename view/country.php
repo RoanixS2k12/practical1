@@ -13,12 +13,13 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <?php include "links.php" ?>
     <title><?= $title ?></title>
 </head>
 
 <body>
 <h1><?php echo $country ?></h1>
-<footer>
+
 
     <table>
         <?php foreach($cities as $cityId => $city) :?>
@@ -32,8 +33,9 @@
     </table>
 
 
-
+<footer>
     <a href="cities.php">Back to list</a>
+    <?php include "footer.php" ?>
 </footer>
 </body>
 </html>

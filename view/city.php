@@ -12,6 +12,7 @@
 <html>
     <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <?php include "links.php" ?>
     <title><?= $title ?></title>
 </head>
 
@@ -21,6 +22,7 @@
 <a href="country.php?name=<?= $city['country']; ?>">See others city from <?php echo $city["country"] ?></a>
 <footer>
     <a href="cities.php">Back to list</a>
+    <?php include "footer.php" ?>
 </footer>
 </body>
 </html>

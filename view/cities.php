@@ -10,6 +10,7 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <?php include "links.php" ?>
         <title>All Cities</title>
     </head>
 
@@ -23,6 +24,7 @@
                 </tr>
             <?php endforeach; ?>
         </table>
+        <?php include "footer.php" ?>
     </body>
 
 </html>

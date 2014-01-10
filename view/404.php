@@ -10,6 +10,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <?php include "links.php" ?>
     <title>404 Not Found</title>
 </head>
 <body>
@@ -19,6 +20,7 @@
 <p><img src="https://raw.github.com/willdurand-edu/php-practicals/master/src/images/nyan.gif" /></p>
 <footer>
     <a href="cities.php">Back to list</a>
+    <?php include "footer.php" ?>
 </footer>
 </body>
 </html>
