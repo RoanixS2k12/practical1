@@ -19,7 +19,12 @@
     <div class="container">
             <h1>All Cities</h1>
             <table class="table table-hover">
+                <thead>
+                <th> City </th>
+                <th> Country </th>
+                </thead>
                 <?php foreach ($cities as $cityId => $city) : ?>
+
                     <tr>
                         <td><a href="city.php?id=<?= $cityId; ?>"><?= $city['name']; ?></a></td>
                         <td><a href="country.php?name=<?= $city['country']; ?>"> <?= $city['country']; ?></a></td>
